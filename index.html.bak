@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Firli — Desainer & Web Creator</title>
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Beranda - Firli">Porfolio</a>
+      <nav class="nav" role="navigation" aria-label="Navigasi utama">
+        <a href="#hero" class="nav-link active">Beranda</a>
+        <a href="about.html" class="nav-link">Tentang</a>
+        <a href="#portfolio" class="nav-link">Portofolio</a>
+        <a href="#contact" class="nav-link btn btn-sm">Hubungi</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hallo, saya</p>
+          <h1>Firli — Desainer UI/UX & Web Creator</h1>
+          <p class="lead">Desainer yang sedang Menempuh sekolah SMK. Menggabungkan estetika visual dan riset pengguna untuk menghasilkan produk yang berfokus pada pengalaman pengguna. Juga mahir membangun website cepat menggunakan bantuan AI.</p>
+
+          <div class="hero-ctas">
+            <a href="#portfolio" class="btn">Lihat Portofolio</a>
+            <a href="#contact" class="btn btn-outline">Bekerja Sama</a>
+          </div>
+
+          <ul class="skills" aria-hidden="false">
+            <li>UI/UX Design</li>
+            <li>Web Design</li>
+            <li>Branding</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+
+        <aside class="hero-card" aria-label="Profil singkat">
+          <div class="card-media">
+            <img src="img/designer.png" alt="Firli - Desainer"/>
+          </div>
+          <div class="card-body">
+            <h4>Freelance Designer</h4>
+            <p class="muted">Pembelajar • AI-powered websites</p>
+            <div class="card-stats">
+              <div><strong>2+</strong><span>Proyek</span></div>
+              <div><strong>2+</strong><span>Klien</span></div>
+            </div>
+
+            <div class="socials" aria-hidden="false">
+              <a href="#" title="Behance" aria-label="Behance">Baru</a>
+              <a href="#" title="Dribbble" aria-label="Dribbble">Dan</a>
+              <a href="#" title="LinkedIn" aria-label="LinkedIn">ini</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Layanan Profesional</h2>
+          <p class="muted">Solusi desain end-to-end dari riset hingga implementasi.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service" tabindex="0">
+            <img src="img/icon-design.svg" alt="UI/UX" />
+            <h3>UI/UX Design</h3>
+            <p>Mendesain antarmuka yang intuitif & filled with delightful interactions.</p>
+          </article>
+
+          <article class="service" tabindex="0">
+            <img src="img/icon-website.svg" alt="Website" />
+            <h3>Website & Prototipe</h3>
+            <p>Membangun website cepat dengan bantuan AI — dari prototipe hingga deploy.</p>
+          </article>
+
+          <article class="service" tabindex="0">
+            <img src="img/icon-branding.svg" alt="Branding" />
+            <h3>Branding</h3>
+            <p>Menciptakan identitas visual konsisten yang memperkuat pesan brand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <h2>Portofolio Terpilih</h2>
+          <p class="muted">Beberapa proyek yang menunjukkan proses desain dan hasil akhir.</p>
+
+          <div class="portfolio-filters" role="tablist" aria-label="Filter portofolio">
+            <button class="filter active" data-filter="all">Semua</button>
+            <button class="filter" data-filter="web">Website</button>
+            <button class="filter" data-filter="branding">Branding</button>
+            <button class="filter" data-filter="mobile">Mobile</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-title="Poster Magic Pocket" data-desc="Aplikasi mobile dan promo windows" data-img="img/magicpocket1.png" data-tags="mobile,branding" width=50%>
+            <img src="img/magicpocket1.png" alt="Poster Magic Pocket"/>
+            <div class="overlay">
+              <h4>Poster Magic Pocket</h4>
+              <p>Konsep UI & materi promosi untuk aplikasi.</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-title="Karya kedua " data-desc="Desain & Implementasi" data-img="img/neymar.jpg" data-tags="web" width=20px height=100px>
+            <img src="img/neymar.jpg " alt="neymar junior"/>
+            <div class="overlay">
+              <h4>Neymar junior</h4>
+              <p>Desain & Implementasi</p>
+            </div>
+          </div>
+             <div class="portfolio-item" data-title="Karya ketiga " data-desc="Desain & Implementasi" data-img="img/firlio.gif" data-tags="photoshop" width=20px height=100px>
+            <img src="img/firlio.gif" alt="poster keren"/>
+            <div class="overlay">
+              <h4>poster keren </h4>
+              <p>Desain & Implementasi</p>
+            </div>
+          </div>
+           </div>
+             <div class="portfolio-item" data-title="Karya terkeren " data-desc="Desain & Implementasi" data-img="img/QATAR.jpg" data-tags="photoshop" width=20px height=30px>
+            <img src="img/QATAR.jpg" alt="poster qatar"/>
+            <div class="overlay">
+              <h4>qatar 2024</h4>
+              <p>Desain & Implementasi</p>
+            </div>
+          </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h3>Siap Bekerja Sama?</h3>
+          <p class="muted">Kirim brief singkat, dan saya akan kembali dengan proposal.</p>
+
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:firlifakta@gmail.com">firlifakta@gmail.com</a></li>
+            <li><strong>Lokasi:</strong> Indonesia</li>
+            <li><strong>Waktu respon:</strong> 1-2 hari kerja</li>
+          </ul>
+
+          <a href="mailto:firlifakta@gmail.com" class="btn">Kirim Email</a>
+        </div>
+
+        <form id="contactForm" class="contact-form" aria-label="Form kontak">
+          <input type="text" id="name" placeholder="Nama Anda" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="subject" placeholder="Subjek" />
+          <textarea id="message" placeholder="Tulis pesan..." rows="6" required></textarea>
+          <button type="submit" class="btn btn-block">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Firli. Dibuat oleh Firli — Desainer & Web Creator.</p>
+      <p class="muted">Made with ❤️ • AI-assisted workflows</p>
+    </div>
+  </footer>
+
+  <!-- Modal untuk preview portofolio -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Preview portofolio">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Tutup">×</button>
+      <img src="" alt="Preview" id="modalImg"/>
+      <div class="modal-meta">
+        <h4 id="modalTitle"></h4>
+        <p id="modalDesc" class="muted"></p>
+        <div class="modal-nav">
+          <button id="prev" aria-label="Sebelumnya">‹</button>
+          <button id="next" aria-label="Berikutnya">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

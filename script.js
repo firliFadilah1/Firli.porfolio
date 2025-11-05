@@ -1,0 +1,123 @@
+// script.js - interaksi untuk versi tampilan profesional
+
+document.addEventListener('DOMContentLoaded', function(){
+  // Mobile nav toggle (simple) dengan ARIA
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if(toggle){
+    toggle.addEventListener('click', ()=>{
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      if(nav.style.display === 'flex') nav.style.display = 'none';
+      else nav.style.display = 'flex';
+    })
+  }
+
+  // Contact form (simulasi) dengan validasi sederhana
+  const form = document.getElementById('contactForm');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if(!name || !email || !message){
+        alert('Silakan isi semua kolom yang diperlukan.');
+        return;
+      }
+
+      // Simulasi pengiriman
+      alert('Terima kasih, ' + name + '! Pesan Anda telah dikirim.');
+      form.reset();
+    });
+  }
+
+  // Portfolio modal preview
+  const items = document.querySelectorAll('.portfolio-item');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modalImg');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDesc = document.getElementById('modalDesc');
+  const modalClose = document.querySelector('.modal-close');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+
+  let currentIndex = 0;
+  const portfolio = Array.from(items);
+
+  function openModal(index){
+    const item = portfolio[index];
+    const img = item.dataset.img;
+    const title = item.dataset.title;
+    const desc = item.dataset.desc;
+    modalImg.src = img;
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    modal.setAttribute('aria-hidden','false');
+    currentIndex = index;
+  }
+
+  items.forEach((item, idx) =>{
+    item.addEventListener('click', ()=> openModal(idx));
+    item.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter' || e.key === ' ') openModal(idx);
+    })
+  })
+
+  if(modalClose) modalClose.addEventListener('click', ()=> modal.setAttribute('aria-hidden','true'));
+  if(modal) modal.addEventListener('click', (e)=>{
+    if(e.target === modal) modal.setAttribute('aria-hidden','true');
+  })
+
+  if(prev) prev.addEventListener('click', ()=> openModal((currentIndex - 1 + portfolio.length) % portfolio.length));
+  if(next) next.addEventListener('click', ()=> openModal((currentIndex + 1) % portfolio.length));
+
+  // Portfolio filtering
+  const filters = document.querySelectorAll('.filter');
+  filters.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+      filters.forEach(b=> b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      portfolio.forEach(item=>{
+        const tags = item.dataset.tags ? item.dataset.tags.split(',') : [];
+        if(filter === 'all' || tags.includes(filter)) item.style.display = 'block';
+        else item.style.display = 'none';
+      })
+    })
+  })
+
+});
+
+// === Added Loading Animation and Portfolio Modal ===
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  setTimeout(() => loader.classList.add("hidden"), 800);
+});
+
+function openProject(projectId) {
+  const modal = document.getElementById("projectModal");
+  const detail = document.getElementById("projectDetail");
+
+  let content = "";
+  if (projectId === "project1") {
+    content = `
+      <h2>AI Chatbot Design</h2>
+      <p>This project showcases an interactive AI chatbot built with modern UI animations and smart responses.</p>
+      <a href="#" target="_blank">View Demo</a>
+    `;
+  } else if (projectId === "project2") {
+    content = `
+      <h2>Magic Pocket App</h2>
+      <p>A multipurpose AI-powered app that helps users create websites, apps, and games easily.</p>
+      <a href="#" target="_blank">View Demo</a>
+    `;
+  }
+  detail.innerHTML = content;
+  modal.style.display = "flex";
+}
+
+function closeProject() {
+  document.getElementById("projectModal").style.display = "none";
+}
