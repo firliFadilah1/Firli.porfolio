@@ -7,7 +7,7 @@
   <!-- Google Font: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="img/favicon.png" />
+  <link rel="icon" href="img2/favicon.ico" />
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -47,7 +47,7 @@
 
         <aside class="hero-card" aria-label="Profil singkat">
           <div class="card-media">
-            <img src="img/singa.png" alt="Firli - Desainer"/>
+            <img src="img2/singa.png" alt="Firli - Desainer"/>
           </div>
           <div class="card-body">
             <h4>Freelance Designer</h4>
@@ -77,19 +77,19 @@
 
         <div class="services-grid">
           <article class="service" tabindex="0">
-            <img src="img/favicon.png" alt="UI/UX" />
+            <img src="img2/favicon.png" alt="UI/UX" />
             <h3>UI/UX Design</h3>
             <p>Mendesain antarmuka yang intuitif & filled with delightful interactions.</p>
           </article>
 
           <article class="service" tabindex="0">
-            <img src="img/icon-website.svg" alt="Website" />
+            <img src="img2/icon-website.svg" alt="Website" />
             <h3>Website & Prototipe</h3>
             <p>Membangun website cepat dengan bantuan AI — dari prototipe hingga deploy.</p>
           </article>
 
           <article class="service" tabindex="0">
-            <img src="img/icon-branding.svg" alt="Branding" />
+            <img src="img2/icon-branding.svg" alt="Branding" />
             <h3>Branding</h3>
             <p>Menciptakan identitas visual konsisten yang memperkuat pesan brand.</p>
           </article>
@@ -114,7 +114,7 @@
 
         <div class="portfolio-grid">
           <div class="portfolio-item" data-title="Poster Magic Pocket" data-desc="Aplikasi mobile dan promo windows" data-img="img/magicpocket1.png" data-tags="mobile,branding" width=50%>
-            <img src="img/magicpocket1.png" alt="Poster Magic Pocket"/>
+            <img src="img2/magicpocket1.png" alt="Poster Magic Pocket"/>
             <div class="overlay">
               <h4>Poster Magic Pocket</h4>
               <p>Konsep UI & materi promosi untuk aplikasi.</p>
@@ -122,14 +122,14 @@
           </div>
 
           <div class="portfolio-item" data-title="Karya kedua " data-desc="Desain & Implementasi" data-img="img/neymar.jpg" data-tags="web" width=20px height=100px>
-            <img src="img/neymar.jpg " alt="neymar junior"/>
+            <img src="img2/neymar.jpg " alt="neymar junior"/>
             <div class="overlay">
               <h4>Neymar junior</h4>
               <p>Desain & Implementasi</p>
             </div>
           </div>
              <div class="portfolio-item" data-title="Karya ketiga " data-desc="Desain & Implementasi" data-img="img/firlio.gif" data-tags="photoshop" width=20px height=100px>
-            <img src="img/firlio.gif" alt="poster keren"/>
+            <img src="img2/firlio.gif" alt="poster keren"/>
             <div class="overlay">
               <h4>poster keren </h4>
               <p>Desain & Implementasi</p>
@@ -137,7 +137,7 @@
           </div>
            </div>
              <div class="portfolio-item" data-title="Karya terkeren " data-desc="Desain & Implementasi" data-img="img/QATAR.jpg" data-tags="photoshop" width=20px height=30px>
-            <img src="img/QATAR.jpg" alt="poster qatar"/>
+            <img src="img2/QATAR.jpg" alt="poster qatar"/>
             <div class="overlay">
               <h4>qatar 2024</h4>
               <p>Desain & Implementasi</p>
