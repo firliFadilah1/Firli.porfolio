@@ -47,7 +47,7 @@
 
         <aside class="hero-card" aria-label="Profil singkat">
           <div class="card-media">
-            <img src="img/designer.png" alt="Firli - Desainer"/>
+            <img src="img/singa.png" alt="Firli - Desainer"/>
           </div>
           <div class="card-body">
             <h4>Freelance Designer</h4>
@@ -77,7 +77,7 @@
 
         <div class="services-grid">
           <article class="service" tabindex="0">
-            <img src="img/icon-design.svg" alt="UI/UX" />
+            <img src="img/favicon.png" alt="UI/UX" />
             <h3>UI/UX Design</h3>
             <p>Mendesain antarmuka yang intuitif & filled with delightful interactions.</p>
           </article>
