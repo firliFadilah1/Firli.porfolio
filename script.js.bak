@@ -1,4 +1,4 @@
-// script.js - interaksi untuk versi tampilan profesional
+script.js - interaksi untuk versi tampilan profesional
 
 document.addEventListener('DOMContentLoaded', function(){
   // Mobile nav toggle (simple) dengan ARIA
